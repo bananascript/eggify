@@ -1,0 +1,1 @@
+function eggify(o){o=o||{};o.e=o.e||document.body;o.s=o.s||[38,38,40,40,37,39,37,39,66,65];o.r=o.r||!1;o.c=o.c||function(){location='#HATCHED'};var i=0,e='keydown',a='addEventListener',f=function(event){if(event.keyCode!==o.s[i++]){i=0}else if(i==o.s.length){i=0;if(!o.r)o.s=[];o.c()}};if(o.e[a]){o.e[a](e,f,!1)}else{o.e.attachEvent('on'+e,f)}}

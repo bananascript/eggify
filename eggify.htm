@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>eggify.js</title>
+	</head>
+	<body>
+		Eggify.js usage examples:
+		<br>
+		<br>
+		<input type="text"> Konami code / up, up, down, down, left, right, left, right, b, a (repeatable)
+		<br>
+		<input type="text"> up up up (not repeatable)
+		<br>
+		<input type="text"> down down down (repeatable)
+		<br>
+		&lt;BODY&gt; Konami code / up, up, down, down, left, right, left, right, b, a (not repeatable)
+		<script src="eggify.js"></script>
+		<script>
+			eggify({
+				'e':document.getElementsByTagName('input')[0],
+				's':[38,38,40,40,37,39,37,39,66,65],
+				'r':true,
+				'c':function(){
+					console.log('Konami Code');
+				}
+			});
+			eggify({
+				'e':document.getElementsByTagName('input')[1],
+				's':[38,38,38],
+				'r':false,
+				'c':function(){
+					console.log('Up up up');
+				}
+			});
+			eggify({
+				'e':document.getElementsByTagName('input')[2],
+				's':[40,40,40],
+				'r':true,
+				'c':function(){
+					console.log('Down down down');
+				}
+			});
+			eggify();
+		</script>
+	</body>
+</html>
