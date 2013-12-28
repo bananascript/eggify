@@ -1,4 +1,4 @@
-Super small and simple way to add the Konami Code (or a custom code) easter egg to your web page. Attach any number of easter eggs to any number of elements in your page.
+﻿Super small and simple way to add the Konami Code (or a custom code) easter egg to your web page. Attach any number of easter eggs to any number of elements in your page.
 
 Usage:
 
